@@ -14,9 +14,8 @@ from ml.model import (
 )
 
 # TODO: load the census.csv data
-project_path = "Deploying-a-Scalable-ML-Pipeline-with-FastAPI-main" 
-data_path = os.path.join(project_path, "data", "census.csv")
-print(data_path)
+project_path = r"c:\Users\15126\D501-Udacity\Deploying-a-Scalable-ML-Pipeline-with-FastAPI-main"
+data_path = os.path.join(project_path, 'data', 'census.csv')
 
 # Your code here to read the CSV
 data = pd.read_csv(data_path)
@@ -38,8 +37,8 @@ cat_features = [
 ]
 
 # TODO: use the process_data function provided to process the data.
-# Use the train dataset, training=True, 
-# you do NOT need to pass encoder and lb for the training set
+# Use the train dataset, training=True. 
+# You do NOT need to pass encoder and lb for the training set.
 X_train, y_train, encoder, lb = process_data(
     train,
     categorical_features=cat_features,
@@ -60,9 +59,9 @@ X_test, y_test, _, _ = process_data(
 model = train_model(X_train, y_train)
 
 # save the model and the encoder
-model_path = os.path.join(project_path, "model", "model.pkl")
+model_path = os.path.join(project_path, "ml", "model.pkl")
 save_model(model, model_path)
-encoder_path = os.path.join(project_path, "model", "encoder.pkl")
+encoder_path = os.path.join(project_path, "ml", "encoder.pkl")
 save_model(encoder, encoder_path)
 
 # load the model
