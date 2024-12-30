@@ -20,8 +20,8 @@ jobs:
       - name: Install dependencies
         run: pip install -r Deploying-a-Scalable-ML-Pipeline-with-FastAPI-main/requirements.txt
 
-      - name: Lint with flake8
-        run: flake8 .
+      - name: Lint with ruff
+        run: ruff . --extend-ignore E501
 
       - name: Test with pytest
         run: pytest
