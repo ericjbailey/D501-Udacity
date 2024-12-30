@@ -1,5 +1,3 @@
-import pytest
-import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 from ml.model import train_model, compute_model_metrics, inference
 from ml.data import process_data
