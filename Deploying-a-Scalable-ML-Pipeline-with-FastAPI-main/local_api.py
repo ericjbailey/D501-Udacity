@@ -1,4 +1,9 @@
+import sys
+import os
 import requests
+
+# Add the project directory to the Python path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 # TODO: send a GET using the URL
 base_url = "http://127.0.0.1:8000"

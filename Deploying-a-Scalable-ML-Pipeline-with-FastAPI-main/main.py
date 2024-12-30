@@ -26,8 +26,8 @@ class Data(BaseModel):
     native_country: str = Field(..., example="United-States", alias="native-country")
 
 # Paths to the saved model and encoder
-encoder_path = "Deploying-a-Scalable-ML-Pipeline-with-FastAPI-main\ml\encoder.pkl"  
-model_path = "Deploying-a-Scalable-ML-Pipeline-with-FastAPI-main\ml\model.pkl"   
+encoder_path = "C:/Users/15126/D501-Udacity/Deploying-a-Scalable-ML-Pipeline-with-FastAPI-main/ml/encoder.pkl"
+model_path = "C:/Users/15126/D501-Udacity/Deploying-a-Scalable-ML-Pipeline-with-FastAPI-main/ml/model.pkl"   
 
 # Load the encoder and model
 encoder = load_model(encoder_path)
