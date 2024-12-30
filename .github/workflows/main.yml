@@ -18,7 +18,7 @@ jobs:
           python-version: '3.12.5'
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install -r Deploying-a-Scalable-ML-Pipeline-with-FastAPI-main/requirements.txt
 
       - name: Lint with flake8
         run: flake8 .
